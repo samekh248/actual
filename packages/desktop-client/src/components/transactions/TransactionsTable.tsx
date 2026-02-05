@@ -136,7 +136,7 @@ import {
 import { pushModal } from '@desktop-client/modals/modalsSlice';
 import { NotesTagFormatter } from '@desktop-client/notes/NotesTagFormatter';
 import { addNotification } from '@desktop-client/notifications/notificationsSlice';
-import { getPayeesById } from '@desktop-client/payees/payeesSlice';
+import { getPayeesById } from '@desktop-client/payees';
 import { useDispatch } from '@desktop-client/redux';
 
 type TransactionHeaderProps = {

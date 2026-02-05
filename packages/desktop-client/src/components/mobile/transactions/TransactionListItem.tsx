@@ -90,7 +90,7 @@ export function TransactionListItem({
   const { t } = useTranslation();
   const { list: categories } = useCategories();
 
-  const payee = usePayee(transaction?.payee || '');
+  const { data: payee } = usePayee(transaction?.payee);
   const displayPayee = useDisplayPayee({ transaction });
 
   const account = useAccount(transaction?.account || '');
